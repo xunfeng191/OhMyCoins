@@ -13,6 +13,16 @@ See how many coins you have and how much they value with data from many sources.
 - 词云：爬取金色财金最近几千条新闻的标题与摘要，分词后生成词云（后端尚未完成）。
 
 ### 用法
+(首先在config.py中设置好参数，包括需要查询的eth地址，交易所api key和secret等，然后运行： python3 app,py 然后浏览器打开localhost：5001需要等一会儿，数据抓好后即显示图表)
+(首先安装依赖：
+
+pip3 install flask beautifulsoup4 cfscrape
+然后在config.py中设置好参数，包括需要查询的eth地址，交易所api键和secret等，设置好后运行（这一步建议配合代理链从梯子走，因为有些交换要被墙了） ：
+
+python3 app.py
+然后浏览器打开localhost：5001需要等大概半分钟，数据抓好后即显示图表)
+
+
 首先安装依赖，后端通过pip3，前端通过npm，然后分别运行：
 
 #### 后端
